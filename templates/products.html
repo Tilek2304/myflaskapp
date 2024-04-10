@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Результаты</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Натыйжалар</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <section class="search-results">
-        <h1>Список продуктов</h1>
+        <h1></h1>
         {% for product in products %}
             <div>
                 <h2>{{ product['fio'] }}</h2>
                 <p>{{ product['rank'] }}</p>
-                <a href="{{ product['link'] }}">Подробнее</a>
+                <a href="{{ product['link'] }}">кененирээк</a>
             </div>
         {% endfor %}
     </section>
