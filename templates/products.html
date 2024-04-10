@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список продуктов</title>
+</head>
+<body>
+    <h1>Список продуктов</h1>
+    {% for product in products %}
+        <div>
+            <h2>{{ product['fio'] }}</h2>
+            <p>{{ product['rank'] }}</p>
+            <a href="{{ product['link'] }}">Подробнее</a>
+        </div>
+    {% endfor %}
+</body>
+</html>
