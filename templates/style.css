@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    /* background-image: url('images/background.webp'); Подставьте свое изображение */
+    /* background-size: 100%, 40%; */
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+.hero::after {
+    content: ' ';
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-image: url('images/background.webp'); /*Подставьте свое изображение*/
+    background-size: 100%, 100%;
+    background-position: 50% 70%;
+    z-index: -1;
+    /* margin-top:-100px; */
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero form input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+}
+
+.hero form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #d00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search-results {
+    padding: 20px;
+}
+
+.search-results h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.search-results ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-results div {
+    width:min(50%,600px);
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.search-results div:hover {
+    background-color: #f0f0f0;
+}
+
+.search-results p a {
+    color: #333;
+    text-decoration: none;
+}
+
+.search-results p a:hover {
+    text-decoration: underline;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

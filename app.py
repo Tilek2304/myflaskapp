@@ -28,8 +28,8 @@ def parse():
         fio = card.find('a', class_='search-card__caption').text.strip()
 
         # Находим и выводим Звание, если есть
-        rank_element = card.find('span', string=lambda x: x and 'Звание' in x)
-        rank = rank_element.text.split(' - ')[-1].strip() if rank_element else 'Звание не указано'
+        rank_element = card.find('span', string=lambda x: x and 'аскердик наам' in x)
+        rank = rank_element.text.split(' - ')[-1].strip() if rank_element else 'аскердик наамы жазылуу эмес'
 
         # Выводим ссылку
         link = card.find('a', class_='search-card__caption')['href']

@@ -1,5 +1,5 @@
 <!-- templates/home.html -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>Поиск</title>
@@ -10,5 +10,47 @@
         <input type="text" name="searchdata" placeholder="Введите запрос для поиска..." required>
         <button type="submit">Искать</button>
     </form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск Ветеранов Красной Армии</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Поиск</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <!-- <h1>Поиск Ветеранов Красной Армии</h1>
+        <form action="#" method="get">
+            <input type="text" placeholder="Введите имя ветерана или номер военной единицы">
+            <button type="submit">Найти ветерана</button>
+        </form> -->
+        <h1>Поиск по сайту www.moypolk.ru</h1>
+        <form action="/parse" method="post">
+            <input type="text" name="searchdata" placeholder="Введите запрос для поиска..." required>
+            <button type="submit">Искать</button>
+        </form>
+    </section>
+
+    <section class="search-results">
+        <!-- Результаты поиска будут здесь -->
+    </section>
+    
+    <footer>
+        <p>Copyright &copy; 2024. Все права защищены.</p>
+    </footer>
 </body>
 </html>

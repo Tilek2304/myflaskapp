@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Список продуктов</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Список продуктов</h1>
-    {% for product in products %}
-        <div>
-            <h2>{{ product['fio'] }}</h2>
-            <p>{{ product['rank'] }}</p>
-            <a href="{{ product['link'] }}">Подробнее</a>
-        </div>
-    {% endfor %}
+    <section class="search-results">
+        <h1>Список продуктов</h1>
+        {% for product in products %}
+            <div>
+                <h2>{{ product['fio'] }}</h2>
+                <p>{{ product['rank'] }}</p>
+                <a href="{{ product['link'] }}">Подробнее</a>
+            </div>
+        {% endfor %}
+    </section>
 </body>
 </html>
